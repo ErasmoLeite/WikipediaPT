@@ -7,12 +7,20 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        dryRun = false,
+        monochrome = false,
         features = "src/test/resources/features/",
         glue = "steps",
-        strict = true,
-        plugin = {"pretty",
+        plugin = {
+                "pretty",
                 "html:target/cucumberReports/mobile/html",
-                "json:target/cucumberReports/mobile/json"
-        })
+                "json:target/cucumberReports/mobile/json",
+                "com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:target/Dashboard.html"
+
+        }
+
+
+        )
+
 public class Runner {
 }

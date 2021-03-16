@@ -2,52 +2,64 @@ $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.
 formatter.feature({
   "comments": [
     {
-      "line": 1,
-      "value": "#language: pt"
+      "line": 3,
+      "value": "# Funcionalidade: consulta"
     },
     {
-      "line": 2,
-      "value": "# encoding: utf8"
+      "line": 4,
+      "value": "# Cenario: Consultar Ovo de Pascoa"
+    },
+    {
+      "line": 5,
+      "value": "# Dado que acesso a Wikipedia em Portugues"
+    },
+    {
+      "line": 6,
+      "value": "#Quando pesquiso por \"Ovo de Páscoa\""
+    },
+    {
+      "line": 7,
+      "value": "#Entao Exibe a expressao \"Ovo de Páscoa\" no titulo da guia"
     }
   ],
-  "line": 5,
-  "name": "consulta",
+  "line": 10,
+  "name": ": consulta",
   "description": "",
-  "id": "consulta",
-  "keyword": "Funcionalidade"
+  "id": ":-consulta",
+  "keyword": "Feature"
 });
 formatter.before({
-  "duration": 2711065399,
+  "duration": 4711944800,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 6,
+  "line": 11,
   "name": "Consultar Ovo de Pascoa",
   "description": "",
-  "id": "consulta;consultar-ovo-de-pascoa",
+  "id": ":-consulta;consultar-ovo-de-pascoa",
   "type": "scenario",
-  "keyword": "Cenario"
+  "keyword": "Scenario"
 });
 formatter.step({
-  "line": 7,
+  "line": 12,
   "name": "que acesso a Wikipedia em Portugues",
-  "keyword": "Dado "
+  "keyword": "Given "
 });
 formatter.step({
-  "line": 8,
+  "line": 13,
   "name": "pesquiso por \"Ovo de Páscoa\"",
-  "keyword": "Quando "
+  "keyword": "When "
 });
 formatter.step({
-  "line": 9,
+  "line": 14,
   "name": "Exibe a expressao \"Ovo de Páscoa\" no titulo da guia",
-  "keyword": "Entao "
+  "keyword": "Then "
 });
 formatter.match({
   "location": "Post.queAcessoAWikipediaEmPortugues()"
 });
 formatter.result({
-  "duration": 2683039800,
+  "duration": 17987287200,
   "status": "passed"
 });
 formatter.match({
@@ -60,7 +72,7 @@ formatter.match({
   "location": "Post.pesquisoPor(String)"
 });
 formatter.result({
-  "duration": 2491675699,
+  "duration": 3239383600,
   "status": "passed"
 });
 formatter.match({
@@ -73,11 +85,11 @@ formatter.match({
   "location": "Post.exibeAExpressaoNoTituloDaGuia(String)"
 });
 formatter.result({
-  "duration": 59113000,
+  "duration": 60301100,
   "status": "passed"
 });
 formatter.after({
-  "duration": 850829001,
+  "duration": 1047412000,
   "status": "passed"
 });
 });
