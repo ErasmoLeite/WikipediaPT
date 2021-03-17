@@ -20,7 +20,7 @@ public class Artigo {
     @Before
     public void iniciar(){
         url = "https://pt.wikipedia.org";
-        System.setProperty("webdriver.chrome.driver", "drivers/chrome/88/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "drivers/chrome/89/chromedriver.exe");
         driver = new ChromeDriver(); //Instanciar o Selenium como o Firefox Driver
 
         driver.manage().window().maximize();
@@ -34,7 +34,10 @@ public class Artigo {
 
         //Pesquisar por "Ovo de Pascoa"
         driver.findElement(By.id("searchInput")).sendKeys("Ovo de Páscoa");
-        driver.findElement(By.id("searchButton")).click();
+      //  driver.findElement(By.id("searchButton")).click();
+        driver.findElement(By.cssSelector("button.wvui-button")).click();
+
+
 
         //Validar o titulo da pagina de retorno
        // assertEquals("Resultados da pesquisa de Ovos da Pásco ? Wikipédia, a enciclopédia livre", driver.getTitle());

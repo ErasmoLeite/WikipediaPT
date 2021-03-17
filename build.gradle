@@ -32,10 +32,16 @@ dependencies {
 
     }
 
-    task smokeTest(type: Test){
-       include '**/Runner*'
-        exclude '**/RunnerBackup*'
+    task regressionTests(type: Test) {
+        include '**/Runner*'
 
     }
-}
 
+    task smokeTest(type: Test) {
+        include '**/Runner*'
+        //  exclude '**/RunnerBackup*'
+
+    }
+
+
+}

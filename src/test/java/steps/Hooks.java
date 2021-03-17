@@ -10,14 +10,14 @@ import java.util.concurrent.TimeUnit;
 public class Hooks extends Base{
     private Base base;
 
-    public Hooks(Base base) {
-        this.base = base;
+    
+    public Hooks(Base base) { this.base = base;
     }
 
     @Before
     public void setup(){        // iniciar
 
-        System.setProperty("webdriver.chrome.driver", "drivers/chrome/88/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "drivers/chrome/89/chromedriver.exe");
         base.driver = new ChromeDriver();
 
         base.driver.manage().window().maximize();
